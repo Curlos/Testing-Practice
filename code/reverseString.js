@@ -9,6 +9,4 @@ const reverseString = (str) => {
   return reversedStrArr.join('')
 }
 
-console.log(reverseString('hello there'))
-
 module.exports = reverseString;

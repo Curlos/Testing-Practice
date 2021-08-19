@@ -9,6 +9,4 @@ const capitalize = (string) => {
 
 }
 
-console.log(capitalize('ERREJkdsfjsjfR'))
-
 module.exports = capitalize;

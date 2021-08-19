@@ -1,17 +1,17 @@
-const add = (...arguments) => {
-  return arguments.reduce((accumulator, currentValue) => accumulator + currentValue)
+const add = (num1, num2) => {
+  return Number(num1) + Number(num2)
 }
 
-const subtract = (...arguments) => {
-  return arguments.reduce((accumulator, currentValue) => accumulator - currentValue)
+const subtract = (num1, num2) => {
+  return Number(num1) - Number(num2)
 }
 
-const multiply = (...arguments) => {
-  return arguments.reduce((accumulator, currentValue) => accumulator * currentValue)
+const multiply = (num1, num2) => {
+  return Number(num1) * Number(num2)
 }
 
-const divide = (...arguments) => {
-  return arguments.reduce((accumulator, currentValue) => accumulator / currentValue)
+const divide = (num1, num2) => {
+  return Number(num1) / Number(num2)
 }
 
 const calculator = {
@@ -20,10 +20,5 @@ const calculator = {
   'multiply': multiply,
   'divide': divide,
 };
-
-console.log(calculator.add(1,2,3,4))
-console.log(calculator.subtract(10,3))
-console.log(calculator.multiply(10,3))
-console.log(calculator.divide(10,3,2))
 
 module.exports = calculator;
