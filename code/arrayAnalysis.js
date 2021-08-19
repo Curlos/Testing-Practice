@@ -1,4 +1,7 @@
 const arrayAnalysis = (arrOfNum) => {
+  if (arrOfNum.length == 0) {
+    throw new Error('This is an empty array, array must have at least one number.')
+  }
   const sum = arrOfNum.reduce((accumulator, currentValue) => accumulator + currentValue)
   const average = sum / arrOfNum.length
   const arrProps = {
@@ -10,7 +13,5 @@ const arrayAnalysis = (arrOfNum) => {
 
   return arrProps
 };
-
-console.log(arrayAnalysis([1,8,3,4,2,6]))
 
 module.exports = arrayAnalysis;
